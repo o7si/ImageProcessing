@@ -9,7 +9,7 @@ cv::Mat BGR2GRAY(cv::Mat image)
     {
         for (int j = 0; j < image.cols; ++ j)
         {
-            // Y= 0.2126 R + 0.7152 G + 0.0722 B
+            // Y = 0.2126 R + 0.7152 G + 0.0722 B
             out.at<uchar>(i, j) =  
                 0.2126 * image.at<cv::Vec3b>(i, j)[2] + \
                 0.7152 * image.at<cv::Vec3b>(i, j)[1] + \
